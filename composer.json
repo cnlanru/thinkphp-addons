@@ -1,0 +1,31 @@
+{
+    "name": "cnlanru/addons",
+    "description": "addons for ThinkPHP 5.1.x",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "潇声",
+            "email": "5502585@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "topthink/think-helper": ">=1.0.4",
+        "topthink/think-installer": ">=1.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src/"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    },
+    "extra": {
+        "think-config": {
+            "addons": "src/config.php"
+        }
+    }
+}
